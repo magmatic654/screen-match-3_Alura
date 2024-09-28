@@ -1,5 +1,6 @@
 package com.alura.screenmatch.calculos;
 
+
 public class FiltroRecomendacion {
     private String recomendacion;
 
@@ -11,5 +12,8 @@ public class FiltroRecomendacion {
         } else {
             System.out.println("Colocalo en tu lista para verlo después");
         }
+
+
+
     }
 }

@@ -51,19 +51,24 @@ public class Principal {
         episodio.setTotalVisualizaciones(300);
         filtro.filtra(episodio);
 
-        var peliculaDeBruno = new Pelicula();
-        peliculaDeBruno.setNombre("El señor de los anillos");
-        peliculaDeBruno.setDuracionEnMinutos(180);
-        peliculaDeBruno.setFechaDeLanzamiento(2001);
+
+
+        var PeliculaDeHarold = new Pelicula();
+        PeliculaDeHarold.setNombre("El jinete sin cabeza");
+        PeliculaDeHarold.setDuracionEnMinutos(105);
+        PeliculaDeHarold.setDirector("Tim burton");
 
         ArrayList<Pelicula> listaDePeliculas = new ArrayList<>();
-        listaDePeliculas.add(peliculaDeBruno);
+        listaDePeliculas.add(PeliculaDeHarold);
         listaDePeliculas.add(miPelicula);
         listaDePeliculas.add(otraPelicula);
 
         System.out.println("Tamaño de la lista: " + listaDePeliculas.size());
         System.out.println("La primera pelicula es: " + listaDePeliculas.get(0).getNombre());
 
-        System.out.println(listaDePeliculas);
+        System.out.println("Peliculas:");
+        for (int i = 0; i < listaDePeliculas.size(); i++){
+            System.out.println(i+1 + ". " +listaDePeliculas.get(i).getNombre());
+        }
     }
 }
